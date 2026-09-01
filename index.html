@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VBST - Veerabhadra Swamy Tours &amp; Travels | Premier Travel Agency India</title>
+  <meta name="description" content="Veerabhadra Swamy Tours &amp; Travels (VBST) offers luxury bus rentals, customized tour packages across India, Volvo coaches, and 24/7 travel services since 2000.">
+  
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement & Contact Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <div class="top-bar-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>+91 81210 16626 / 92462 96626</span>
+        </div>
+        <div class="top-bar-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:booking@vbstravels.com">booking@vbstravels.com</a>
+        </div>
+        <div class="top-bar-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Langar House, Hyderabad - 500008</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header & Navigation (Clean Logo Only) -->
+  <header class="main-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo" title="VBST Travels Home">
+        <img src="images/logo_vbst.png" alt="Veerabhadra Swamy Tours &amp; Travels">
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="destinations.html" class="nav-link">Destinations</a>
+        <a href="packages.html" class="nav-link">Packages</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="guide.html" class="nav-link">Guide &amp; Tips</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-accent trigger-booking" data-trip="kerala" data-trip-name="Custom Tour">
+          <i class="fa-solid fa-calendar-check"></i> Book Now
+        </button>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner Slider -->
+  <section class="hero-slider-section">
+    <div class="slider-track">
+      <!-- Slide 1 -->
+      <div class="slide-item active">
+        <img src="images/banner_main_1.jpg" alt="VBST Luxury Coaches" class="slide-bg">
+        <div class="slide-content">
+          <h1 class="slide-title">Explore Incredible India With Luxury &amp; Comfort</h1>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide-item">
+        <img src="images/banner_main_2.jpg" alt="VBST Travel Fleet" class="slide-bg">
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide-item">
+        <img src="images/banner_main_3.jpg" alt="VBST Highway Travel" class="slide-bg">
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide-item">
+        <img src="images/banner_main_4.jpg" alt="VBST Luxury Journey" class="slide-bg">
+      </div>
+    </div>
+
+    <!-- Slider Controls -->
+    <div class="slider-controls">
+      <button class="slider-arrow" id="sliderPrev" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+      <div class="slider-dots">
+        <span class="slider-dot active"></span>
+        <span class="slider-dot"></span>
+        <span class="slider-dot"></span>
+        <span class="slider-dot"></span>
+      </div>
+      <button class="slider-arrow" id="sliderNext" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- Quick Booking / Search Bar -->
+  <section class="quick-booking-bar container">
+    <div class="booking-bar-card">
+      <form class="booking-bar-form" id="quickSearchForm">
+        <div class="form-group">
+          <label for="quickOrigin"><i class="fa-solid fa-location-crosshairs"></i> Departure City</label>
+          <select id="quickOrigin" class="form-control">
+            <option value="hyderabad" selected>Hyderabad (Telangana)</option>
+            <option value="vijayawada">Vijayawada (AP)</option>
+            <option value="visakhapatnam">Visakhapatnam (AP)</option>
+            <option value="bangalore">Bangalore (Karnataka)</option>
+            <option value="chennai">Chennai (Tamil Nadu)</option>
+            <option value="delhi">Delhi / NCR</option>
+            <option value="mumbai">Mumbai (Maharashtra)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="quickDestination"><i class="fa-solid fa-map-pin"></i> Destination (India)</label>
+          <select id="quickDestination" class="form-control">
+            <option value="kerala">Kerala (Munnar &amp; Alleppey)</option>
+            <option value="goa">Goa (Beaches &amp; Heritage)</option>
+            <option value="kashmir">Kashmir (Srinagar &amp; Gulmarg)</option>
+            <option value="rajasthan">Rajasthan (Jaipur &amp; Udaipur)</option>
+            <option value="manali">Himachal (Manali &amp; Shimla)</option>
+            <option value="ooty">Tamil Nadu (Ooty &amp; Kodaikanal)</option>
+            <option value="tirupati">Tirupati &amp; South Temples</option>
+            <option value="varanasi">Varanasi &amp; Prayagraj</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="quickDate"><i class="fa-solid fa-calendar-days"></i> Travel Date</label>
+          <input type="date" id="quickDate" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="quickVehicle"><i class="fa-solid fa-van-shuttle"></i> Vehicle / Group Size</label>
+          <select id="quickVehicle" class="form-control">
+            <option value="tempo">12-Seater Tempo Traveller</option>
+            <option value="volvo">Luxury Volvo Coach (40-50 seats)</option>
+            <option value="minibus">AC Mini Coach (20-30 seats)</option>
+          </select>
+        </div>
+
+        <button type="button" class="btn btn-accent" id="quickSearchBtn" style="height: 48px; padding: 0 24px;">
+          <i class="fa-solid fa-magnifying-glass"></i> Check &amp; Book
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Welcome & About Section (Original Photos pic1.png & pic2.png) -->
+  <section class="welcome-section">
+    <div class="container">
+      <div class="welcome-grid">
+        <div class="welcome-images">
+          <div class="welcome-img-card">
+            <img src="images/pic1.png" alt="Veerabhadra Swamy Travels Fleet">
+          </div>
+          <div class="welcome-img-card">
+            <img src="images/pic2.png" alt="VBST Luxury Coaches">
+          </div>
+          <div class="welcome-badge-floating">
+            <div class="badge-num">24+</div>
+            <div class="badge-txt">Years of<br>Excellence</div>
+          </div>
+        </div>
+
+        <div class="welcome-content">
+          <h2><span>Veerabhadra Swamy</span> Tours &amp; Travels Agency</h2>
+          <p>
+            Veerabhadra Swamy Tours &amp; Travels is a professional travel rental company and a preferred destination in twin cities for all types of transport services for the past two and a half decades.
+          </p>
+          <p>
+            Incorporated in the year 2000, our company has enriched itself day by day to comfort tourists and exceed traveler expectations. We prioritize creating a hassle-free, cozy, and memorable atmosphere for every journey across India.
+          </p>
+
+          <div class="features-check-grid">
+            <div class="check-item"><i class="fa-solid fa-check"></i> Registered &amp; Licensed Travel Agency</div>
+            <div class="check-item"><i class="fa-solid fa-check"></i> Fully Insured (Unlimited 3rd Party Claim)</div>
+            <div class="check-item"><i class="fa-solid fa-check"></i> 24/7 Round The Clock Support</div>
+            <div class="check-item"><i class="fa-solid fa-check"></i> Trained, Decent &amp; Uniformed Chauffeurs</div>
+            <div class="check-item"><i class="fa-solid fa-check"></i> In-house Workshop &amp; Maintenance</div>
+            <div class="check-item"><i class="fa-solid fa-check"></i> 100% Indian Destinations Covered</div>
+          </div>
+
+          <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+            <a href="packages.html" class="btn btn-primary">
+              <i class="fa-solid fa-suitcase-rolling"></i> Explore All Packages
+            </a>
+            <a href="contact.html" class="btn btn-outline">
+              <i class="fa-solid fa-comments"></i> Inquire With an Expert
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet & Comfort Section (Original Photos pic3.png & pic4.png) -->
+  <section class="fleet-comfort-section bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Feel The <span>Comfort &amp; Luxury</span></h2>
+        <p class="section-subtitle">Travel in style and safety with our impeccably maintained fleet of luxury coaches and rental vehicles.</p>
+      </div>
+
+      <div class="fleet-grid">
+        <div class="fleet-highlights-box">
+          <h3 style="font-size: 1.5rem; color: var(--secondary-color); margin-bottom: 8px;">Our Specialized Travel Infrastructure</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            We offer round the clock rental services with a wide choice of latest model vehicles on chauffeur-driven basis.
+          </p>
+
+          <div class="fleet-list">
+            <div class="fleet-list-item">
+              <i class="fa-solid fa-bus-simple"></i>
+              <div>
+                <strong style="color: var(--secondary-color);">Branded Volvo Coaches &amp; AC Buses</strong>
+                <p>Spacious multi-axle Volvo coaches with reclining push-back seats, air suspension, LCD screens, and mobile charging sockets.</p>
+              </div>
+            </div>
+
+            <div class="fleet-list-item">
+              <i class="fa-solid fa-van-shuttle"></i>
+              <div>
+                <strong style="color: var(--secondary-color);">12 &amp; 17 Seater Tempo Travellers</strong>
+                <p>Ideal for family excursions, corporate outings, and pilgrimage tours with generous luggage space and high-roof comfort.</p>
+              </div>
+            </div>
+
+            <div class="fleet-list-item">
+              <i class="fa-solid fa-user-shield"></i>
+              <div>
+                <strong style="color: var(--secondary-color);">Trained, Disciplined &amp; Verified Chauffeurs</strong>
+                <p>Experienced route masters with deep knowledge of Indian highways, state borders, and scenic tourist spots.</p>
+              </div>
+            </div>
+
+            <div class="fleet-list-item">
+              <i class="fa-solid fa-kit-medical"></i>
+              <div>
+                <strong style="color: var(--secondary-color);">24 Hours Service &amp; First Aid Equipped</strong>
+                <p>Every vehicle has emergency kits, sanitized interiors, GPS tracking, and our own workshop maintenance backup.</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-accent trigger-booking" data-trip="custom" data-trip-name="Fleet Coach Rental">
+            <i class="fa-solid fa-handshake"></i> Request Fleet Quote
+          </button>
+        </div>
+
+        <div class="fleet-showcase-images">
+          <div class="fleet-showcase-card">
+            <img src="images/pic3.png" alt="VBST Volvo Coach">
+            <h4>Luxury AC Coaches</h4>
+            <span>Volvo &amp; BharatBenz</span>
+          </div>
+          <div class="fleet-showcase-card">
+            <img src="images/pic4.png" alt="VBST Tempo Traveller">
+            <h4>Tempo Travellers</h4>
+            <span>12 &amp; 17 Seater</span>
+          </div>
+          <div class="fleet-showcase-card">
+            <img src="images/gallery-2.jpg" alt="VBST Corporate Fleets">
+            <h4>Corporate Fleets</h4>
+            <span>All Indian Routes</span>
+          </div>
+          <div class="fleet-showcase-card" style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; background: linear-gradient(135deg, var(--secondary-color), var(--primary-dark)); color:#fff;">
+            <i class="fa-solid fa-shield-heart" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 12px;"></i>
+            <h4 style="color:#fff;">100% Insured</h4>
+            <p style="font-size: 0.8rem; color:#cbd5e1;">Unlimited 3rd Party Claim for all passengers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Indian Destinations (Inside India Only) -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Popular <span>Indian Destinations</span></h2>
+        <p class="section-subtitle">Discover the majestic beauty, rich heritage, and serene landscapes of India with VBST curated trips.</p>
+      </div>
+
+      <div class="destinations-grid">
+        <!-- Destination 1: Kerala -->
+        <div class="dest-card">
+          <div class="dest-img-wrap">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80" alt="Kerala Backwaters &amp; Munnar">
+            <span class="dest-tag">South India</span>
+            <span class="dest-price-badge">From Rs.14,499</span>
+          </div>
+          <div class="dest-content">
+            <div class="dest-location"><i class="fa-solid fa-map-pin"></i> Kerala (Munnar, Alleppey, Thekkady)</div>
+            <h3 class="dest-title">Kerala Backwaters &amp; Hill Country</h3>
+            <p class="dest-desc">Cruise the tranquil backwaters in traditional houseboats, witness lush green tea gardens in Munnar, and rejuvenate with authentic Ayurvedic therapies.</p>
+            <div class="dest-meta">
+              <span class="dest-meta-item"><i class="fa-regular fa-clock"></i> 5 Days / 4 Nights</span>
+              <span class="dest-meta-item"><i class="fa-solid fa-sun"></i> Best: Sep - Mar</span>
+            </div>
+            <div class="dest-card-actions">
+              <a href="destinations.html" class="btn btn-outline btn-sm">View Details</a>
+              <button class="btn btn-accent btn-sm trigger-booking" data-trip="kerala" data-trip-name="Kerala Backwaters Tour">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination 2: Kashmir -->
+        <div class="dest-card">
+          <div class="dest-img-wrap">
+            <img src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=800&q=80" alt="Kashmir Dal Lake &amp; Snow">
+            <span class="dest-tag">North India</span>
+            <span class="dest-price-badge">From Rs.18,999</span>
+          </div>
+          <div class="dest-content">
+            <div class="dest-location"><i class="fa-solid fa-map-pin"></i> Jammu &amp; Kashmir (Srinagar, Gulmarg, Pahalgam)</div>
+            <h3 class="dest-title">Kashmir - Paradise On Earth</h3>
+            <p class="dest-desc">Experience romantic Shikara rides on Dal Lake, thrilling Gondola cable cars in Gulmarg snow peaks, and picturesque saffron valleys.</p>
+            <div class="dest-meta">
+              <span class="dest-meta-item"><i class="fa-regular fa-clock"></i> 6 Days / 5 Nights</span>
+              <span class="dest-meta-item"><i class="fa-solid fa-snowflake"></i> Best: All Year</span>
+            </div>
+            <div class="dest-card-actions">
+              <a href="destinations.html" class="btn btn-outline btn-sm">View Details</a>
+              <button class="btn btn-accent btn-sm trigger-booking" data-trip="kashmir" data-trip-name="Kashmir Paradise Tour">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination 3: Goa -->
+        <div class="dest-card">
+          <div class="dest-img-wrap">
+            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80" alt="Goa Beaches and Coastal Sunsets">
+            <span class="dest-tag">West India</span>
+            <span class="dest-price-badge">From Rs.9,999</span>
+          </div>
+          <div class="dest-content">
+            <div class="dest-location"><i class="fa-solid fa-map-pin"></i> Goa (North &amp; South Goa)</div>
+            <h3 class="dest-title">Goa Beach Extravaganza</h3>
+            <p class="dest-desc">Golden sandy beaches, vibrant water sports at Calangute and Baga, ancient Portuguese cathedrals, and sunset cruises on the Mandovi River.</p>
+            <div class="dest-meta">
+              <span class="dest-meta-item"><i class="fa-regular fa-clock"></i> 4 Days / 3 Nights</span>
+              <span class="dest-meta-item"><i class="fa-solid fa-umbrella-beach"></i> Best: Oct - Apr</span>
+            </div>
+            <div class="dest-card-actions">
+              <a href="destinations.html" class="btn btn-outline btn-sm">View Details</a>
+              <button class="btn btn-accent btn-sm trigger-booking" data-trip="goa" data-trip-name="Goa Beach Extravaganza">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination 4: Rajasthan -->
+        <div class="dest-card">
+          <div class="dest-img-wrap">
+            <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80" alt="Jaipur &amp; Udaipur Rajasthan Palaces">
+            <span class="dest-tag">Heritage Circuit</span>
+            <span class="dest-price-badge">From Rs.16,999</span>
+          </div>
+          <div class="dest-content">
+            <div class="dest-location"><i class="fa-solid fa-map-pin"></i> Rajasthan (Jaipur, Udaipur, Jodhpur)</div>
+            <h3 class="dest-title">Royal Rajasthan Heritage</h3>
+            <p class="dest-desc">Explore majestic Amer Fort, City Palace of Udaipur, thrilling desert camel safaris in Jaisalmer, and experience royal Rajput hospitality.</p>
+            <div class="dest-meta">
+              <span class="dest-meta-item"><i class="fa-regular fa-clock"></i> 6 Days / 5 Nights</span>
+              <span class="dest-meta-item"><i class="fa-solid fa-crown"></i> Best: Oct - Mar</span>
+            </div>
+            <div class="dest-card-actions">
+              <a href="destinations.html" class="btn btn-outline btn-sm">View Details</a>
+              <button class="btn btn-accent btn-sm trigger-booking" data-trip="rajasthan" data-trip-name="Royal Rajasthan Tour">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination 5: Manali & Rohtang -->
+        <div class="dest-card">
+          <div class="dest-img-wrap">
+            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80" alt="Manali Snow Mountains &amp; Solang">
+            <span class="dest-tag">Hill Station</span>
+            <span class="dest-price-badge">From Rs.11,999</span>
+          </div>
+          <div class="dest-content">
+            <div class="dest-location"><i class="fa-solid fa-map-pin"></i> Himachal Pradesh (Manali, Solang, Rohtang)</div>
+            <h3 class="dest-title">Manali Snow &amp; Adventure Trail</h3>
+            <p class="dest-desc">Adventure in Solang Valley with paragliding, skiing, scenic drives through the Atal Tunnel, and river rafting in the gushing Beas River.</p>
+            <div class="dest-meta">
+              <span class="dest-meta-item"><i class="fa-regular fa-clock"></i> 5 Days / 4 Nights</span>
+              <span class="dest-meta-item"><i class="fa-solid fa-mountain"></i> Best: All Seasons</span>
+            </div>
+            <div class="dest-card-actions">
+              <a href="destinations.html" class="btn btn-outline btn-sm">View Details</a>
+              <button class="btn btn-accent btn-sm trigger-booking" data-trip="manali" data-trip-name="Manali Adventure Trail">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination 6: Tirupati & South Temples -->
+        <div class="dest-card">
+          <div class="dest-img-wrap">
+            <img src="https://images.unsplash.com/photo-1609766857041-ed402ea8069a?auto=format&fit=crop&w=800&q=80" alt="Tirupati Balaji and South Indian Temples">
+            <span class="dest-tag">Pilgrimage</span>
+            <span class="dest-price-badge">From Rs.6,499</span>
+          </div>
+          <div class="dest-content">
+            <div class="dest-location"><i class="fa-solid fa-map-pin"></i> Andhra Pradesh (Tirumala &amp; Tirupati)</div>
+            <h3 class="dest-title">Tirupati Balaji Darshan Circuit</h3>
+            <p class="dest-desc">Hassle-free divine pilgrimage to Lord Venkateswara Temple at Tirumala, Padmavathi Temple, and Sri Kalahasti with AC coach transport.</p>
+            <div class="dest-meta">
+              <span class="dest-meta-item"><i class="fa-regular fa-clock"></i> 3 Days / 2 Nights</span>
+              <span class="dest-meta-item"><i class="fa-solid fa-hands-praying"></i> Best: Year Round</span>
+            </div>
+            <div class="dest-card-actions">
+              <a href="destinations.html" class="btn btn-outline btn-sm">View Details</a>
+              <button class="btn btn-accent btn-sm trigger-booking" data-trip="tirupati" data-trip-name="Tirupati Pilgrimage Circuit">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 45px;">
+        <a href="destinations.html" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-earth-asia"></i> View All Indian Destinations &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Tour Packages (Prices in Indian Rupees Rs. INR) -->
+  <section class="section-padding bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Best Value <span>Tour Packages</span></h2>
+        <p class="section-subtitle">All packages clearly priced in Indian Currency (Rs. INR) with luxury transport, hotel stays, meals, and certified tour guides included.</p>
+      </div>
+
+      <div class="packages-grid">
+        <!-- Package 1: Kerala -->
+        <div class="package-card">
+          <span class="package-ribbon">Bestseller</span>
+          <div class="package-img-wrap">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80" alt="Kerala Delight">
+            <span class="package-duration-badge"><i class="fa-regular fa-clock"></i> 5 Days / 4 Nights</span>
+          </div>
+          <div class="package-content">
+            <div class="package-header">
+              <h3 class="package-title">God's Own Kerala Holiday</h3>
+              <div class="package-rating"><i class="fa-solid fa-star"></i> 4.9 (148)</div>
+            </div>
+            <div class="package-route"><i class="fa-solid fa-route"></i> Cochin &rarr; Munnar &rarr; Thekkady &rarr; Alleppey</div>
+            <ul class="package-highlights">
+              <li><i class="fa-solid fa-circle-check"></i> Tea Garden Walk &amp; Cheeyappara Waterfalls</li>
+              <li><i class="fa-solid fa-circle-check"></i> 1-Night Deluxe AC Houseboat with all meals</li>
+              <li><i class="fa-solid fa-circle-check"></i> Chauffeur-driven AC Coach / Tempo Traveller</li>
+            </ul>
+            <div class="package-inclusions">
+              <div class="inclusion-item"><i class="fa-solid fa-hotel"></i><span>3★ / 4★ Hotel</span></div>
+              <div class="inclusion-item"><i class="fa-solid fa-utensils"></i><span>Breakfast</span></div>
+              <div class="inclusion-item"><i class="fa-solid fa-bus"></i><span>AC Transport</span></div>
+              <div class="inclusion-item"><i class="fa-solid fa-user-tie"></i><span>Guide</span></div>
+            </div>
+
+            <!-- Day-by-Day Itinerary Accordion -->
+            <div class="package-itinerary-wrapper">
+              <button class="itinerary-toggle-btn" type="button" aria-expanded="false">
+                <span class="toggle-title"><i class="fa-solid fa-calendar-days"></i> <span class="toggle-text">View Day-by-Day Plan</span></span>
+                <i class="fa-solid fa-chevron-down toggle-icon"></i>
+              </button>
+              <div class="package-itinerary-collapse">
+                <div class="itinerary-timeline">
+                  <div class="itinerary-day-item">
+                    <span class="itinerary-day-bullet"></span>
+                    <div class="itinerary-day-content">
+                      <div class="itinerary-day-header">
+                        <span class="itinerary-day-badge">Day 1</span>
+                        <h4 class="itinerary-day-title">Arrival in Cochin &amp; Scenic Drive to Munnar</h4>
+                        <span class="itinerary-day-stay"><i class="fa-solid fa-bed"></i> Munnar Stay</span>
+                      </div>
+                      <p class="itinerary-day-desc">Pickup from Cochin airport/station. Scenic hill drive stopping at Cheeyappara waterfalls. Check in at Munnar resort with leisure evening.</p>
+                      <div class="itinerary-day-tags">
+                        <span class="itinerary-tag"><i class="fa-solid fa-utensils"></i> Dinner</span>
+                        <span class="itinerary-tag"><i class="fa-solid fa-camera"></i> Cheeyappara Falls</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itinerary-day-item">
+                    <span class="itinerary-day-bullet"></span>
+                    <div class="itinerary-day-content">
+                      <div class="itinerary-day-header">
+                        <span class="itinerary-day-badge">Day 2</span>
+                        <h4 class="itinerary-day-title">Munnar Tea Plantations &amp; Mattupetty Dam</h4>
+                        <span class="itinerary-day-stay"><i class="fa-solid fa-bed"></i> Munnar Stay</span>
+                      </div>
+                      <p class="itinerary-day-desc">Visit Tea Museum, Mattupetty Dam, Echo Point, and Kundala Lake. Stroll through aromatic spice gardens.</p>
+                      <div class="itinerary-day-tags">
+                        <span class="itinerary-tag"><i class="fa-solid fa-utensils"></i> Breakfast &amp; Dinner</span>
+                        <span class="itinerary-tag"><i class="fa-solid fa-leaf"></i> Tea Gardens</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itinerary-day-item">
+                    <span class="itinerary-day-bullet"></span>
+                    <div class="itinerary-day-content">
+                      <div class="itinerary-day-header">
+                        <span class="itinerary-day-badge">Day 3</span>
+                        <h4 class="itinerary-day-title">Munnar to Thekkady &amp; Periyar Boat Safari</h4>
+                        <span class="itinerary-day-stay"><i class="fa-solid fa-bed"></i> Thekkady Stay</span>
+                      </div>
+                      <p class="itinerary-day-desc">Scenic drive to Thekkady. Lake boat safari at Periyar Tiger Reserve and evening Kathakali cultural performance.</p>
+                      <div class="itinerary-day-tags">
+                        <span class="itinerary-tag"><i class="fa-solid fa-utensils"></i> Breakfast &amp; Dinner</span>
+                        <span class="itinerary-tag"><i class="fa-solid fa-water"></i> Periyar Safari</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itinerary-day-item">
+                    <span class="itinerary-day-bullet"></span>
+                    <div class="itinerary-day-content">
+                      <div class="itinerary-day-header">
+                        <span class="itinerary-day-badge">Day 4</span>
+                        <h4 class="itinerary-day-title">Thekkady to Alleppey Deluxe Houseboat</h4>
+                        <span class="itinerary-day-stay"><i class="fa-solid fa-ship"></i> Houseboat Stay</span>
+                      </div>
+                      <p class="itinerary-day-desc">Board private AC Deluxe Houseboat at Alleppey backwaters. Enjoy traditional Kerala lunch, evening snacks &amp; candlelight dinner on water.</p>
+                      <div class="itinerary-day-tags">
+                        <span class="itinerary-tag"><i class="fa-solid fa-utensils"></i> All Meals</span>
+                        <span class="itinerary-tag"><i class="fa-solid fa-ship"></i> Houseboat Cruise</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itinerary-day-item">
+                    <span class="itinerary-day-bullet"></span>
+                    <div class="itinerary-day-content">
+                      <div class="itinerary-day-header">
+                        <span class="itinerary-day-badge">Day 5</span>
+                        <h4 class="itinerary-day-title">Alleppey to Cochin Sightseeing &amp; Departure</h4>
+                        <span class="itinerary-day-stay"><i class="fa-solid fa-plane-departure"></i> Tour Concludes</span>
+                      </div>
+                      <p class="itinerary-day-desc">Breakfast on houseboat. Visit Fort Kochi and Chinese Fishing Nets before airport/station drop.</p>
+                      <div class="itinerary-day-tags">
+                        <span class="itinerary-tag"><i class="fa-solid fa-utensils"></i> Breakfast</span>
+                        <span class="itinerary-tag"><i class="fa-solid fa-car"></i> Airport Drop</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="package-footer">
+              <div class="package-price-box">
+                <span class="price-label">Starting From</span>
+                <span class="price-amount">Rs.14,499 <span>/ person</span></span>
+              </div>
+              <button class="btn btn-accent trigger-booking" data-trip="kerala" data-trip-name="Kerala Holiday Package">
+                <i class="fa-solid fa-bolt"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package 2: Kashmir -->
+        <div class="package-card">
+          <span class="package-ribbon">Trending</span>
+          <div class="package-img-wrap">
+            <img src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=800&q=80" alt="Kashmir Splendor">
+            <span class="package-duration-badge"><i class="fa-regular fa-clock"></i> 6 Days / 5 Nights</span>
+          </div>
+          <div class="package-content">
+            <div class="package-header">
+              <h3 class="package-title">Enchanting Kashmir &amp; Gulmarg</h3>
+              <div class="package-rating"><i class="fa-solid fa-star"></i> 4.95 (210)</div>
+            </div>
+            <div class="package-route"><i class="fa-solid fa-route"></i> Srinagar &rarr; Gulmarg &rarr; Sonmarg &rarr; Pahalgam</div>
+            <ul class="package-highlights">
+              <li><i class="fa-solid fa-circle-check"></i> Traditional Dal Lake Houseboat stay &amp; Shikara</li>
+              <li><i class="fa-solid fa-circle-check"></i> Gulmarg Gondola Cable Car Ride (Phase 1)</li>
+              <li><i class="fa-solid fa-circle-check"></i> Dedicated VBST Tour Manager</li>
+            </ul>
+            <div class="package-inclusions">
+              <div class="inclusion-item"><i class="fa-solid fa-hotel"></i><span>Deluxe Stay</span></div>
+              <div class="inclusion-item"><i class="fa-solid fa-utensils"></i><span>MAP Meals</span></div>
+              <div class="inclusion-item"><i class="fa-solid fa-bus"></i><span>AC Transport</span></div>
+              <div class="inclusion-item"><i class="fa-solid fa-camera"></i><span>Sightseeing</span></div>
+            </div>
+
+            <!-- Day-by-Day Itinerary Accordion -->
+            <div class="package-itinerary-wrapper">
+              <button class="itinerary-toggle-btn" type="button" aria-expanded="false">
+                <span class="toggle-title"><i class="fa-solid fa-calendar-days"></i> <span class="toggle-text">View Day-by-Day Plan</span></span>
+                <i class="fa-solid fa-chevron-down toggle-icon"></i>
+              </button>
+              <div class="package-itinerary-collapse">
+                <div class="itinerary-timeline">
+                  <div class="itinerary-day-item">
+                    <span class="itinerary-day-bullet"></span>
+                    <div class="itinerary-day-content">
+                      <div class="itinerary-day-header">
+                        <span class="itinerary-day-badge">Day 1</span>
+                        <h4 class="itinerary-day-title">Arrival in Srinagar &amp; Dal Lake Shikara Ride</h4>
+                        <span class="itinerary-day-stay"><i class="fa-solid fa-bed"></i> Houseboat Stay</span>
+                      </div>
+                      <p class="itinerary-day-desc">Welcome at Srinagar airport. Check in to Dal Lake luxury houseboat with sunset Shikara ride across Floating Gardens.</p>
+                      <div class="itinerary-day-tags">
+                        <span class="itinerary-tag"><i class="fa-solid fa-utensils"></i> Dinner</span>
+                        <span class="itinerary-tag"><i class="fa-solid fa-ship"></i> Shikara Ride</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itinerary-day-item">
+                    <span class="itinerary-day-bullet"></span>
+                    <div class="itinerary-day-content">
+                      <div class="itinerary-day-header">
+                        <span class="itinerary-day-badge">Day 2</span>
+                        <h4 class="itinerary-day-title">Gulmarg Snow Excursion &amp; Gondola Ride</h4>
+                        <span class="itinerary-day-stay"><i class="fa-solid fa-bed"></i> Srinagar Stay</span>
+                      </div>
+                      <p class="itinerary-day-desc">Excursion to Gulmarg. Ride the world-famous Gondola Cable Car to snow peaks with skiing and sledging.</p>
+                      <div class="itinerary-day-tags">
+                        <span class="itinerary-tag"><i class="fa-solid fa-utensils"></i> Breakfast &amp; Dinner</span>
+                        <span class="itinerary-tag"><i class="fa-solid fa-snowflake"></i> Gondola Ride</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itinerary-day-item">
+                    <span class="itinerary-day-bullet"></span>
+                    <div class="itinerary-day-content">
+                      <div class="itinerary-day-header">
+                        <span class="itinerary-day-badge">Day 3</span>
+                        <h4 class="itinerary-day-title">Sonmarg "Meadow of Gold" Glacier Trip</h4>
+                        <span class="itinerary-day-stay"><i class="fa-solid fa-bed"></i> Srinagar Stay</span>
+                      </div>
+                      <p class="itinerary-day-desc">Drive along River Sindh to Sonmarg. Pony ride to Thajiwas Glacier with scenic Himalayan snow views.</p>
+                      <div class="itinerary-day-tags">
+                        <span class="itinerary-tag"><i class="fa-solid fa-utensils"></i> Breakfast &amp; Dinner</span>
+                        <span class="itinerary-tag"><i class="fa-solid fa-mountain"></i> Thajiwas Glacier</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itinerary-day-item">
+                    <span class="itinerary-day-bullet"></span>
+                    <div class="itinerary-day-content">
+                      <div class="itinerary-day-header">
+                        <span class="itinerary-day-badge">Day 4</span>
+                        <h4 class="itinerary-day-title">Srinagar to Pahalgam Valley of Shepherds</h4>
+                        <span class="itinerary-day-stay"><i class="fa-solid fa-bed"></i> Pahalgam Stay</span>
+                      </div>
+                      <p class="itinerary-day-desc">Scenic drive to Pahalgam through Pampore saffron fields. Check in to riverside resort along crystal Lidder River.</p>
+                      <div class="itinerary-day-tags">
+                        <span class="itinerary-tag"><i class="fa-solid fa-utensils"></i> Breakfast &amp; Dinner</span>
+                        <span class="itinerary-day-tags"><span class="itinerary-tag"><i class="fa-solid fa-water"></i> Lidder River</span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itinerary-day-item">
+                    <span class="itinerary-day-bullet"></span>
+                    <div class="itinerary-day-content">
+                      <div class="itinerary-day-header">
+                        <span class="itinerary-day-badge">Day 5</span>
+                        <h4 class="itinerary-day-title">Pahalgam Betaab Valley &amp; Mughal Gardens</h4>
+                        <span class="itinerary-day-stay"><i class="fa-solid fa-bed"></i> Srinagar Stay</span>
+                      </div>
+                      <p class="itinerary-day-desc">Tour Betaab Valley &amp; Aru Valley. Return drive to Srinagar to visit Nishat Bagh and Shalimar Bagh Mughal gardens.</p>
+                      <div class="itinerary-day-tags">
+                        <span class="itinerary-tag"><i class="fa-solid fa-utensils"></i> Breakfast &amp; Dinner</span>
+                        <span class="itinerary-tag"><i class="fa-solid fa-tree"></i> Mughal Gardens</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itinerary-day-item">
+                    <span class="itinerary-day-bullet"></span>
+                    <div class="itinerary-day-content">
+                      <div class="itinerary-day-header">
+                        <span class="itinerary-day-badge">Day 6</span>
+                        <h4 class="itinerary-day-title">Srinagar Bazaars &amp; Airport Departure Drop</h4>
+                        <span class="itinerary-day-stay"><i class="fa-solid fa-plane-departure"></i> Tour Concludes</span>
+                      </div>
+                      <p class="itinerary-day-desc">Shop for authentic Kashmiri Pashmina, dry fruits &amp; saffron before transfer to Srinagar Airport.</p>
+                      <div class="itinerary-day-tags">
+                        <span class="itinerary-tag"><i class="fa-solid fa-utensils"></i> Breakfast</span>
+                        <span class="itinerary-tag"><i class="fa-solid fa-car"></i> Airport Drop</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="package-footer">
+              <div class="package-price-box">
+                <span class="price-label">Starting From</span>
+                <span class="price-amount">Rs.18,999 <span>/ person</span></span>
+              </div>
+              <button class="btn btn-accent trigger-booking" data-trip="kashmir" data-trip-name="Kashmir &amp; Gulmarg Package">
+                <i class="fa-solid fa-bolt"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package 3: Golden Triangle -->
+        <div class="package-card">
+          <div class="package-img-wrap">
+            <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80" alt="Golden Triangle Agra Taj Mahal">
+            <span class="package-duration-badge"><i class="fa-regular fa-clock"></i> 5 Days / 4 Nights</span>
+          </div>
+          <div class="package-content">
+            <div class="package-header">
+              <h3 class="package-title">Golden Triangle (Delhi-Agra-Jaipur)</h3>
+              <div class="package-rating"><i class="fa-solid fa-star"></i> 4.8 (185)</div>
+            </div>
+            <div class="package-route"><i class="fa-solid fa-route"></i> Delhi &rarr; Agra (Taj Mahal) &rarr; Fatehpur Sikri &rarr; Jaipur</div>
+            <ul class="package-highlights">
+              <li><i class="fa-solid fa-circle-check"></i> Sunrise tour of Wonder of the World Taj Mahal</li>
+              <li><i class="fa-solid fa-circle-check"></i> Amer Fort, Hawa Mahal, and Qutub Minar</li>
+              <li><i class="fa-solid fa-circle-check"></i> Express Highway Luxury Coach Transfer</li>
+            </ul>
+            <div class="package-inclusions">
+              <div class="inclusion-item"><i class="fa-solid fa-hotel"></i><span>Heritage Stay</span></div>
+              <div class="inclusion-item"><i class="fa-solid fa-utensils"></i><span>Breakfast</span></div>
+              <div class="inclusion-item"><i class="fa-solid fa-bus"></i><span>AC Coach</span></div>
+              <div class="inclusion-item"><i class="fa-solid fa-landmark"></i><span>Monument Entry</span></div>
+            </div>
+
+            <!-- Day-by-Day Itinerary Accordion -->
+            <div class="package-itinerary-wrapper">
+              <button class="itinerary-toggle-btn" type="button" aria-expanded="false">
+                <span class="toggle-title"><i class="fa-solid fa-calendar-days"></i> <span class="toggle-text">View Day-by-Day Plan</span></span>
+                <i class="fa-solid fa-chevron-down toggle-icon"></i>
+              </button>
+              <div class="package-itinerary-collapse">
+                <div class="itinerary-timeline">
+                  <div class="itinerary-day-item">
+                    <span class="itinerary-day-bullet"></span>
+                    <div class="itinerary-day-content">
+                      <div class="itinerary-day-header">
+                        <span class="itinerary-day-badge">Day 1</span>
+                        <h4 class="itinerary-day-title">Arrival in Delhi &amp; Historic Monument Tour</h4>
+                        <span class="itinerary-day-stay"><i class="fa-solid fa-bed"></i> Delhi Stay</span>
+                      </div>
+                      <p class="itinerary-day-desc">Welcome at Delhi airport/station. Tour Qutub Minar, India Gate, Lotus Temple, and drive past President House &amp; Parliament. Check in at hotel.</p>
+                      <div class="itinerary-day-tags">
+                        <span class="itinerary-tag"><i class="fa-solid fa-utensils"></i> Dinner</span>
+                        <span class="itinerary-tag"><i class="fa-solid fa-monument"></i> India Gate</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itinerary-day-item">
+                    <span class="itinerary-day-bullet"></span>
+                    <div class="itinerary-day-content">
+                      <div class="itinerary-day-header">
+                        <span class="itinerary-day-badge">Day 2</span>
+                        <h4 class="itinerary-day-title">Delhi to Agra via Expressway &amp; Agra Fort</h4>
+                        <span class="itinerary-day-stay"><i class="fa-solid fa-bed"></i> Agra Stay</span>
+                      </div>
+                      <p class="itinerary-day-desc">Drive to Agra via Yamuna Expressway. Tour red sandstone Agra Fort and catch sunset views of Taj Mahal across Yamuna from Mehtab Bagh.</p>
+                      <div class="itinerary-day-tags">
+                        <span class="itinerary-tag"><i class="fa-solid fa-utensils"></i> Breakfast</span>
+                        <span class="itinerary-tag"><i class="fa-solid fa-chess-rook"></i> Agra Fort</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itinerary-day-item">
+                    <span class="itinerary-day-bullet"></span>
+                    <div class="itinerary-day-content">
+                      <div class="itinerary-day-header">
+                        <span class="itinerary-day-badge">Day 3</span>
+                        <h4 class="itinerary-day-title">Taj Mahal Sunrise &amp; Drive to Jaipur via Fatehpur Sikri</h4>
+                        <span class="itinerary-day-stay"><i class="fa-solid fa-bed"></i> Jaipur Stay</span>
+                      </div>
+                      <p class="itinerary-day-desc">Witness majestic sunrise at the world-famous Taj Mahal. Drive to Jaipur with stopover at Mughal ghost city Fatehpur Sikri and Buland Darwaza.</p>
+                      <div class="itinerary-day-tags">
+                        <span class="itinerary-tag"><i class="fa-solid fa-utensils"></i> Breakfast</span>
+                        <span class="itinerary-tag"><i class="fa-solid fa-gem"></i> Taj Mahal Sunrise</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itinerary-day-item">
+                    <span class="itinerary-day-bullet"></span>
+                    <div class="itinerary-day-content">
+                      <div class="itinerary-day-header">
+                        <span class="itinerary-day-badge">Day 4</span>
+                        <h4 class="itinerary-day-title">Full Day Royal Jaipur Forts &amp; Palaces</h4>
+                        <span class="itinerary-day-stay"><i class="fa-solid fa-bed"></i> Jaipur Stay</span>
+                      </div>
+                      <p class="itinerary-day-desc">Ascend hilltop Amer Fort with jeep ride. Visit City Palace, Jantar Mantar, Hawa Mahal, and explore vibrant Johari Bazaar.</p>
+                      <div class="itinerary-day-tags">
+                        <span class="itinerary-tag"><i class="fa-solid fa-utensils"></i> Breakfast</span>
+                        <span class="itinerary-tag"><i class="fa-solid fa-crown"></i> Amer Fort</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itinerary-day-item">
+                    <span class="itinerary-day-bullet"></span>
+                    <div class="itinerary-day-content">
+                      <div class="itinerary-day-header">
+                        <span class="itinerary-day-badge">Day 5</span>
+                        <h4 class="itinerary-day-title">Jaipur to Delhi Departure Drop</h4>
+                        <span class="itinerary-day-stay"><i class="fa-solid fa-plane-departure"></i> Tour Concludes</span>
+                      </div>
+                      <p class="itinerary-day-desc">After breakfast, leisurely drive back to Delhi Airport / Railway Station or drop at Jaipur airport for departure.</p>
+                      <div class="itinerary-day-tags">
+                        <span class="itinerary-tag"><i class="fa-solid fa-utensils"></i> Breakfast</span>
+                        <span class="itinerary-tag"><i class="fa-solid fa-car"></i> Departure Drop</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="package-footer">
+              <div class="package-price-box">
+                <span class="price-label">Starting From</span>
+                <span class="price-amount">Rs.12,499 <span>/ person</span></span>
+              </div>
+              <button class="btn btn-accent trigger-booking" data-trip="rajasthan" data-trip-name="Golden Triangle Tour">
+                <i class="fa-solid fa-bolt"></i> Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 45px;">
+        <a href="packages.html" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-gift"></i> View All Packages with Day-wise Itineraries (in Rs.) &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Preview (Featuring Original Website Images) -->
+  <section class="section-padding bg-white">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">VBST <span>Photo Gallery</span></h2>
+        <p class="section-subtitle">Real snapshots from our official fleet, coaches, tours, and happy travelers across India.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/gallery-1.jpg" alt="VBST Luxury Fleet">
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/gallery-2.jpg" alt="Group Excursions">
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/gallery-3.jpg" alt="Highway Journeys">
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/gallery-4.jpg" alt="Twin Cities Rentals">
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/gallery-5.jpg" alt="Premium Interiors">
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/gallery-6.jpg" alt="Scenic Destinations">
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="gallery.html" class="btn btn-outline btn-lg">
+          <i class="fa-solid fa-images"></i> View Full 12-Photo Gallery &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Online Booking Callout Banner (Original pic5.png) -->
+  <section class="cta-banner-section">
+    <div class="container">
+      <div class="cta-banner-grid">
+        <div class="cta-banner-img">
+          <img src="images/pic5.png" alt="Online Booking Support">
+        </div>
+        <div class="cta-banner-info">
+          <h3>For Instant Online Booking &amp; Custom Tour Queries</h3>
+          <p>Contact our round-the-clock reservation desk for best package deals and corporate coach rentals.</p>
+          <div class="cta-hotlines">
+            <div class="cta-hotline-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>81210 16626 | 92462 96626</span>
+            </div>
+            <div class="cta-hotline-item">
+              <i class="fa-solid fa-mobile-screen"></i>
+              <span>90009 99189 | 98854 66626</span>
+            </div>
+            <div class="cta-hotline-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:booking@vbstravels.com">booking@vbstravels.com</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="btn btn-accent btn-lg trigger-booking" data-trip="custom" data-trip-name="Instant Online Booking">
+            <i class="fa-solid fa-calendar-check"></i> Book Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews / Why Choose VBST -->
+  <section class="section-padding bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">What Our <span>Travelers Say</span></h2>
+        <p class="section-subtitle">Over two decades of smiles, safety, and unforgettable journeys across India.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 25px;">
+        <div style="background: var(--bg-white); padding: 30px; border-radius: var(--radius-md); box-shadow: var(--card-shadow); border: 1px solid var(--border-color);">
+          <div style="color: var(--gold-color); margin-bottom: 12px; font-size: 1.1rem;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px; font-style: italic;">
+            "We hired a 12-seater Tempo Traveller from VBST for our family trip from Hyderabad to Ooty &amp; Kodaikanal. The vehicle was spotless, driver was extremely polite and careful. Highly recommend!"
+          </p>
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--primary-light); color: var(--primary-dark); display: flex; align-items: center; justify-content: center; font-weight: 700;">RS</div>
+            <div>
+              <strong style="color: var(--secondary-color); font-size: 0.95rem;">Ravi Shankar Rao</strong>
+              <div style="font-size: 0.8rem; color: var(--text-light);">Hyderabad &bull; Family Tour</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-white); padding: 30px; border-radius: var(--radius-md); box-shadow: var(--card-shadow); border: 1px solid var(--border-color);">
+          <div style="color: var(--gold-color); margin-bottom: 12px; font-size: 1.1rem;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px; font-style: italic;">
+            "Booked our Kashmir package through VBST. Everything from houseboats to Gulmarg transport was smoothly coordinated. Package price in INR was completely transparent without any hidden charges."
+          </p>
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--primary-light); color: var(--primary-dark); display: flex; align-items: center; justify-content: center; font-weight: 700;">PK</div>
+            <div>
+              <strong style="color: var(--secondary-color); font-size: 0.95rem;">Praveen Kumar</strong>
+              <div style="font-size: 0.8rem; color: var(--text-light);">Secunderabad &bull; Kashmir Tour</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: var(--bg-white); padding: 30px; border-radius: var(--radius-md); box-shadow: var(--card-shadow); border: 1px solid var(--border-color);">
+          <div style="color: var(--gold-color); margin-bottom: 12px; font-size: 1.1rem;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px; font-style: italic;">
+            "Our company organized an annual corporate retreat to Goa. VBST provided 2 luxury Volvo coaches. On-time departure, AC was great throughout the journey, and full passenger insurance gave peace of mind."
+          </p>
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--primary-light); color: var(--primary-dark); display: flex; align-items: center; justify-content: center; font-weight: 700;">SL</div>
+            <div>
+              <strong style="color: var(--secondary-color); font-size: 0.95rem;">Sneha Lakshmi</strong>
+              <div style="font-size: 0.8rem; color: var(--text-light);">HITEC City &bull; Corporate Event</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Lightbox Modal for Gallery -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content-box">
+      <button class="lightbox-close" id="lightboxClose">&times;</button>
+      <button class="lightbox-nav-btn lightbox-prev" id="lightboxPrev"><i class="fa-solid fa-chevron-left"></i></button>
+      <img src="" alt="VBST Full Photo" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption">VBST Photo Gallery</div>
+      <button class="lightbox-nav-btn lightbox-next" id="lightboxNext"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </div>
+
+  <!-- Interactive Booking Modal (Accessible on all pages) -->
+  <div class="booking-modal" id="bookingModal">
+    <div class="booking-modal-box">
+      <div class="booking-modal-header">
+        <h3 class="booking-modal-title">Book Your <span>Tour Package</span></h3>
+        <button class="booking-modal-close" id="closeBookingModal">&times;</button>
+      </div>
+
+      <div class="price-estimate-banner">
+        <div>
+          <div class="price-estimate-title"><i class="fa-solid fa-calculator"></i> Estimated Total in INR</div>
+          <small style="color:var(--text-muted);">Includes transport, taxes &amp; insurance</small>
+        </div>
+        <div class="price-estimate-value" id="modalEstimatedPrice">Rs.14,499</div>
+      </div>
+
+      <form id="bookingForm">
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="modalTripSelect"><i class="fa-solid fa-map-location-dot"></i> Select Destination / Package</label>
+            <select id="modalTripSelect" class="form-control" required>
+              <option value="kerala">Kerala Backwaters &amp; Munnar (Rs.14,499)</option>
+              <option value="kashmir">Kashmir &amp; Gulmarg Paradise (Rs.18,999)</option>
+              <option value="goa">Goa Beach Extravaganza (Rs.9,999)</option>
+              <option value="rajasthan">Royal Rajasthan Tour (Rs.16,999)</option>
+              <option value="manali">Himachal Manali Adventure (Rs.11,999)</option>
+              <option value="ooty">Ooty &amp; Kodaikanal Hills (Rs.8,499)</option>
+              <option value="varanasi">Varanasi &amp; Prayagraj Divine (Rs.10,499)</option>
+              <option value="tirupati">Tirupati Balaji Darshan (Rs.6,499)</option>
+              <option value="leh">Leh Ladakh Expedition (Rs.24,999)</option>
+              <option value="darjeeling">Darjeeling &amp; Gangtok Hills (Rs.15,999)</option>
+              <option value="custom">Custom Rental / Fleet Hire</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="modalVehicleSelect"><i class="fa-solid fa-van-shuttle"></i> Preferred Vehicle</label>
+            <select id="modalVehicleSelect" class="form-control">
+              <option value="tempo" selected>12-Seater Tempo Traveller</option>
+              <option value="volvo">Luxury Volvo Coach (Multi-axle)</option>
+              <option value="minibus">AC Mini Coach (25 seater)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="modalDate"><i class="fa-solid fa-calendar-day"></i> Departure Date</label>
+            <input type="date" id="modalDate" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="modalPickup"><i class="fa-solid fa-location-arrow"></i> Pickup Location</label>
+            <input type="text" id="modalPickup" class="form-control" placeholder="e.g. Hyderabad / Airport / Home" value="Hyderabad" required>
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="modalPeople"><i class="fa-solid fa-users"></i> No. of People / Passengers</label>
+            <input type="number" id="modalPeople" class="form-control" min="1" max="60" value="1" required>
+          </div>
+          <div class="form-group">
+            <label for="modalName"><i class="fa-solid fa-user-pen"></i> Your Full Name</label>
+            <input type="text" id="modalName" class="form-control" placeholder="Enter full name" required>
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="modalPhone"><i class="fa-solid fa-phone"></i> Mobile Phone (+91)</label>
+            <input type="tel" id="modalPhone" class="form-control" placeholder="10-digit mobile number" required>
+          </div>
+          <div class="form-group">
+            <label for="modalEmail"><i class="fa-solid fa-envelope"></i> Email Address</label>
+            <input type="email" id="modalEmail" class="form-control" placeholder="name@example.com" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-accent btn-lg" style="width: 100%; margin-top: 10px;">
+          <i class="fa-solid fa-paper-plane"></i> Confirm &amp; Submit Booking Request
+        </button>
+      </form>
+
+      <!-- Booking Confirmation View -->
+      <div class="booking-success-message" id="bookingSuccess">
+        <div class="booking-success-icon"><i class="fa-solid fa-check"></i></div>
+        <h3 style="color: var(--secondary-color); font-size: 1.5rem; margin-bottom: 8px;">Booking Request Received!</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">
+          Thank you for choosing Veerabhadra Swamy Tours &amp; Travels. Your booking reference number is:
+        </p>
+        <div style="background: var(--primary-light); padding: 10px 20px; display: inline-block; border-radius: var(--radius-sm); font-weight: 800; font-size: 1.3rem; color: var(--primary-dark); margin-bottom: 20px;" id="bookingRefCode">
+          VBST-849201
+        </div>
+        <div style="background: var(--bg-alt); padding: 18px; border-radius: var(--radius-sm); text-align: left; font-size: 0.9rem; margin-bottom: 25px; line-height: 1.7;" id="bookingSummaryDetails">
+          <!-- Populated by JS -->
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <button type="button" class="btn btn-primary btn-lg" onclick="document.getElementById('bookingModal').classList.remove('active');">
+            <i class="fa-solid fa-check"></i> Close Window
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Quick Actions -->
+  <div class="floating-actions">
+    <button class="floating-btn floating-book trigger-booking" data-trip="kerala" data-trip-name="Quick Inquiry" title="Quick Booking">
+      <i class="fa-solid fa-calendar-check"></i>
+    </button>
+  </div>
+
+  <!-- Footer (Clean Logo Only) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <div style="margin-bottom: 18px;">
+            <a href="index.html"><img src="images/logo_vbst.png" alt="Veerabhadra Swamy Tours &amp; Travels" style="height: 55px; width: auto;"></a>
+          </div>
+          <p>
+            Veerabhadra Swamy Tours &amp; Travels (Incorporated in 2000) is the leading travel rental company in Hyderabad twin cities, providing luxury coaches, customized tour packages, and chauffeur services across all of India.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links-list">
+            <a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a>
+            <a href="destinations.html"><i class="fa-solid fa-angle-right"></i> Indian Destinations</a>
+            <a href="packages.html"><i class="fa-solid fa-angle-right"></i> Tour Packages (in Rs.)</a>
+            <a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Photo Gallery</a>
+            <a href="guide.html"><i class="fa-solid fa-angle-right"></i> Travel Guide &amp; Fleet</a>
+            <a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact &amp; Location</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Top Indian Tours</h4>
+          <div class="footer-links-list">
+            <a href="destinations.html"><i class="fa-solid fa-angle-right"></i> Kerala Backwaters</a>
+            <a href="destinations.html"><i class="fa-solid fa-angle-right"></i> Kashmir &amp; Gulmarg</a>
+            <a href="destinations.html"><i class="fa-solid fa-angle-right"></i> Goa Coastal Beaches</a>
+            <a href="destinations.html"><i class="fa-solid fa-angle-right"></i> Royal Rajasthan</a>
+            <a href="destinations.html"><i class="fa-solid fa-angle-right"></i> Manali &amp; Rohtang Pass</a>
+            <a href="destinations.html"><i class="fa-solid fa-angle-right"></i> Tirupati Balaji Darshan</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Communication Details</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>#9-1-365/1/A1, Janaki Nagar, Langar House, Sangham Road, Near Bapu Ghat, Hyderabad - 500008</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <span>8121016626 | 9246296626</span><br>
+                <span>9000999189 | 9885466626</span>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:booking@vbstravels.com">booking@vbstravels.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-globe"></i>
+              <a href="https://vbstravels.com" target="_blank">www.vbstravels.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2000 - 2026 Veerabhadra Swamy Tours &amp; Travels. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
